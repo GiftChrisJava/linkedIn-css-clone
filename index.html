@@ -30,9 +30,54 @@
 
         <div class="navbar-right">
             <div class="online">
-            <img src="images/user-1.png" class="nav-profile-img">
+            <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
             </div>
         </div>
+
+        <!-- ------------ profile drop down menu ------------- -->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h3>Ryan Walton</h3>
+                        <a href="#">See your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give feedback</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & privacy</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+            
+        </div>
+
       </nav>
       <!-- ------------------------ navbar close-------------- -->
 
@@ -286,7 +331,7 @@
             <div class="post-author">
                 <img src="images/user-5.png">
                 <div>
-                    <h1>Nomsa Nzigmbo</h1>
+                    <h1>Nomsa Nziagmbo</h1>
                     <small>Founder and CEO at Gellelio Group | Angel Investor</small>
                     <small>2 hours ago</small>
                 </div>
@@ -393,5 +438,13 @@
 
     </div>
     </div>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu() {
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
 </body>
 </html>
